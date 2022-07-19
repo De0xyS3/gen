@@ -176,7 +176,7 @@ msg -bar
 # permited=$(curl -sSL "$(ofus $keybot)/NetVPS/Bot-Gen-MultiScript/main/Control-IP")
 # [[ -z $keybot ]] && echo $link > /bin/downloadbot  || echo -e "$(ofus $keybot)" > /bin/downloadbot 
 # }
-permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Bot-Gen-MultiScript/main/Control-IP") 
+permited=$(curl -sSL "https://raw.githubusercontent.com/hhportugames/TESTETSET/main/Control-IP") 
  [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n"
@@ -199,7 +199,7 @@ permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Bot-Gen-MultiScri
   echo -e "   Mediante $link Autorida por @ChumoGH"
   echo -e "      SI DESEAS USAR EL BOTGEN CONTACTE A @ChumoGH"
   echo -e "\e[32m=====================================================\n\n\n\e[0m"
-  v1=$(curl -sSL "https://www.dropbox.com/s/blxo0jifysvyrey/v-new.log")
+  v1=$(curl -sSL "https://raw.githubusercontent.com/hhportugames/TESTETSET/main/dropbox/v-new.log")
   [[ ! -e /bin/downloadbot ]] && {
   [[ $link = 'https://raw.githubusercontent.com' ]] && echo "https://raw.githubusercontent.com" > /bin/downloadbot || echo "$(ofus $keybot)" > /bin/downloadbot
   chmod +x /bin/downloadbot
@@ -210,13 +210,14 @@ permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Bot-Gen-MultiScri
   echo $lv > /etc/nivbot
   } || echo "1" > /etc/nivbot
   echo $Key > /etc/valkey && chmod +x /etc/valkey
-  [[ -e /usr/bin/lst ]] || echo 'https://www.dropbox.com/s/g4zqgr3dwgj0f1g/lista?dl=0' > /usr/bin/lst && chmod 777 /usr/bin/lst
+  [[ -e /usr/bin/lst ]] || echo 'https://www.dropbox.com/s/gy153y8o65uqhk8/lista?dl=0' > /usr/bin/lst && chmod 777 /usr/bin/lst
   }
 }
 
 [[ ! -e /etc/http-instas ]] && echo '0' > /etc/http-instas || let sd=$(cat < /etc/http-instas)-$coo && echo $sd > /etc/http-instas
 [[ -d $SCPT_DIR ]] && rm -rf $SCPT_DIR
-SCPresq="aHR0cHM6Ly93d3cuZHJvcGJveC5jb20vcy9wNXYyaGV2cmZqM3BkeGIv"
+##SCPresq="aHR0cHM6Ly93d3cuZHJvcGJveC5jb20vcy9wNXYyaGV2cmZqM3BkeGIv"
+SCPresq="aHR0cHM6Ly93d3cuZHJvcGJveC5jb20vcy9neTE1M3k4bzY1dXFoazg="
 SUB_DOM='base64 -d'
 fun_bar1 () {
 comando[0]="$1"
@@ -415,12 +416,13 @@ atualiza_fun
 IVAR2="/etc/key-gerador"
 echo "$Key" > $IVAR2
 rm $HOME/lista-arq
-wget --no-check-certificate -O /etc/SCRIPT/gerar.sh -q https://www.dropbox.com/s/25g993sfwayphr8/menu-gerar.sh && chmod +x /etc/SCRIPT/gerar.sh
+##wget --no-check-certificate -O /etc/SCRIPT/gerar.sh -q https://www.dropbox.com/s/25g993sfwayphr8/menu-gerar.sh && chmod +x /etc/SCRIPT/gerar.sh
+wget --no-check-certificate -O /etc/SCRIPT/gerar.sh -q https://www.dropbox.com/s/t89yichd4rx563y/gerar.sh?dl=0 && chmod +x /etc/SCRIPT/gerar.sh
 echo 'cd /etc/SCRIPT && ./gerar.sh' > /usr/bin/gerar
-echo 'source <(curl -sSL https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/back/free-men.sh)' > /bin/ejecutar/echo-ram.sh
-echo 'wget -q -O /bin/ejecutar/v-new.log https://www.dropbox.com/s/8tizr516cvkwss6/v-new.log?dl=0' >> /bin/ejecutar/echo-ram.sh && bash /bin/ejecutar/echo-ram.sh
+echo 'source <(curl -sSL https://raw.githubusercontent.com/hhportugames/TESTETSET/main/free-men.sh)' > /bin/ejecutar/echo-ram.sh
+echo 'wget -q -O /bin/ejecutar/v-new.log https://www.dropbox.com/s/wtdb9f5p4mvlo7v/v-new.log?dl=0' >> /bin/ejecutar/echo-ram.sh && bash /bin/ejecutar/echo-ram.sh
 chmod +x /bin/ejecutar/echo-ram.sh && bash /bin/ejecutar/echo-ram.sh
-wget --no-check-certificate -q -O /var/www/html/index.html https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/html/index.html
+wget --no-check-certificate -q -O /var/www/html/index.html https://raw.githubusercontent.com/hhportugames/TESTETSET/main/index.html
 chmod +x /usr/bin/gerar
 echo "cd /etc/SCRIPT && ./gerar.sh" > /usr/bin/keygen && chmod +x /usr/bin/keygen
 echo -e "\033[1;33m Perfecto, utilize el comando \033[1;31mkeygen o gerar \033[1;33mpara administrar sus keys y
